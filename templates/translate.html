@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1 class="center-text">VaaniConnect - Voice Chat Translator</h1>
+
+    <div class="lang-select">
+        <div class="user-box">
+            <label for="user1Lang">User 1 Language:</label>
+            <select id="user1Lang">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="te">Telugu</option>
+                <option value="ta">Tamil</option>
+                <option value="ml">Malayalam</option>
+                <option value="kn">Kannada</option>
+            </select>
+            <button class="speak-btn-orange" id="user1SpeakBtn">🎤 Speak (User 1)</button>
+            <button class="stop-btn-blue" id="user1StopBtn">🛑 Stop and Translate</button>
+        </div>
+
+        <div class="user-box">
+            <label for="user2Lang">User 2 Language:</label>
+            <select id="user2Lang">
+                <option value="en">English</option>
+                <option value="hi">Hindi</option>
+                <option value="te">Telugu</option>
+                <option value="ta">Tamil</option>
+                <option value="ml">Malayalam</option>
+                <option value="kn">Kannada</option>
+            </select>
+            <button class="speak-btn-orange" id="user2SpeakBtn">🎤 Speak (User 2)</button>
+            <button class="stop-btn-blue" id="user2StopBtn">🛑 Stop and Translate</button>
+        </div>
+    </div>
+
+    <div class="center-btn">
+        <button class="clear-btn-orange" id="clearBtn">🧹 Clear All</button>
+    </div>
+
+    <div class="chat-output" id="chatOutput">
+        <!-- Translations appear here -->
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+{% endblock %}

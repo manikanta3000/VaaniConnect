@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="home-container">
+    <h1>Welcome to VaaniConnect</h1>
+    <p>VaaniConnect is a multilingual conversational AI platform designed to bridge communication gaps in South Indian languages like <strong>Telugu, Tamil, Kannada, and Malayalam</strong>, along with <strong>English and Hindi</strong>.</p>
+    <p>We empower rural communities by offering <strong>voice-to-text</strong>, <strong>text-to-speech</strong>, and <strong>real-time translation</strong> services.</p>
+    <p>VaaniConnect supports <strong>local governance</strong>, <strong>education</strong>, and <strong>healthcare</strong> by addressing regional language barriers.</p>
+    <a href="{{ url_for('translate') }}" class="cta-button">Try Translation</a>
+</div>
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="about-section">
+    <h1>About VaaniConnect</h1>
+
+    <div class="project-card">
+        <h2>Our Mission</h2>
+        <p>
+            <strong>VaaniConnect</strong> is a multilingual conversational AI platform designed to break language barriers in South India. 
+            Supporting languages like Telugu, Tamil, Kannada, Malayalam, Hindi, and English, it enables real-time voice-to-text, text-to-speech, 
+            and translation for improved communication in education, healthcare, and local governance sectors.
+        </p>
+    </div>
+
+    <div class="profile-card">
+        <img src="{{ url_for('static', filename='images/myphoto.jpg') }}" alt="Profile Photo">
+        <h3>Vakkalagadda Kesava Manikanta</h3>
+        <p>Full-stack Developer & AI Integrator</p>
+        <div class="social-icons">
+            <!-- Replace # with your actual links -->
+            <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/vakkalagadda-kesava-manikanta-7b1743226/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+</div>
+{% endblock %}
