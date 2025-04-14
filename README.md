@@ -24,6 +24,18 @@
 
 ---
 
+## 🌐 Live Website (Demo Link)
+🔗 Visit here: https://vaaniconnect.onrender.com
+
+---
+
+## 👤 Developer Information
+Vakkalagadda Kesava Manikanta
+- Full-Stack Developer • AI Integrator • FOSS Enthusiast
+- 🔗 GitHub: @manikanta3000
+
+---
+
 ## 🚀 How to Run This Project Locally
 
 ```bash
